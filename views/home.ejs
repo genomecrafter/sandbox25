@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIDS - Network Intrusion Detection System</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5bf56866c4.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/homeStyles.css">
+    
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        .hero-buttons .btn {
+            margin: 10px;
+            padding: 12px 24px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: all 0.3s;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+        }
+        .hero-buttons .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 255, 255, 0.5);
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            text-align: center;
+        }
+        .feature-box {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            border: 2px solid transparent;
+            margin-bottom: 20px;
+        }
+        .feature-box:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-10px);
+            border-color: rgba(0, 255, 255, 0.8);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.5);
+        }
+        .feature-box i {
+            color: #0ff;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        .feature-box h3 {
+            color: #fff;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.9);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        }
+    </style>
+</head>
+
+<%- include('partials/header') %>
+
+<body>
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Protect Your Network with Advanced Intrusion Detection</h1>
+            <p>Stay ahead of cyber threats with real-time analysis and intelligent threat detection.</p>
+            <div class="hero-buttons">
+                <a href="/submit" class="btn btn-light">Sign-In</a>
+                <a href="/register" class="btn btn-outline-light">Sign-Up</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features-section container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-network-wired fa-3x"></i>
+                    <h3>AI-Powered Intrusion Detection with Data Heterogeneity</h3>
+                    <p>Train ML models (SVM,Decision Trees) with real and SMOTE-generated synthetic data to detect frequent and rare attacks and hence compare their performance .</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-shield-alt fa-3x"></i>
+                    <h3>Adaptive Threat Prevention</h3>
+                    <p>Real-time learning and adaptation to evolving cyberattacks, ensuring proactive security measures.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box">
+                    <i class="fas fa-chart-line fa-3x"></i>
+                    <h3>Intelligent Network Analysis</h3>
+                    <p>Analyzing network behavior and distinguishing between legitimate and malicious activities using AI-driven insights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 NIDS - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

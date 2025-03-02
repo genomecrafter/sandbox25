@@ -1,0 +1,94 @@
+<%- include('partials/header') %>
+
+<style>
+  /* Push the features section down */
+  #features {
+    padding-top: 120px; /* Adjust this value if needed */
+    text-align: center; /* Center align all text */
+  }
+
+  /* Feature boxes: Center text & add spacing */
+  .feature-box {
+    text-align: center;
+    margin-bottom: 50px; /* Add spacing between feature boxes */
+    padding: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Hover effect: Glow animation */
+  .feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(77, 181, 255, 0.7);
+  }
+
+  /* Center icons and make them white */
+  .feature-box i {
+    display: block;
+    margin: 0 auto 20px; /* Centers icons and adds space below */
+    color: #ffffff;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+
+  /* Icon glow effect on hover */
+  .feature-box:hover i {
+    color: #4db5ff;
+    text-shadow: 0 0 15px #4db5ff;
+  }
+
+  /* Feature text styling */
+  .feature-title, .feature-desc {
+    color: #ffffff;
+  }
+</style>
+
+<body style="margin:0;">
+
+  <div>
+    <!-- Features Section -->
+    <section class="white-section" id="features">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-network-wired fa-4x"></i>
+            <h3 class="feature-title">AI-Powered Network Traffic Analysis</h3>
+            <p class="feature-desc">Uses deep learning to analyze network traffic and detect potential threats dynamically.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-user-shield fa-4x"></i>
+            <h3 class="feature-title">Real-Time Adaptive Threat Prevention</h3>
+            <p class="feature-desc">Automatically blocks threats in real-time using AI-driven security policies.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-brain fa-4x"></i>
+            <h3 class="feature-title">AI-Driven Anomaly Detection</h3>
+            <p class="feature-desc">Identifies zero-day attacks by matching network traffic against AI-learned normal patterns.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-book-skull fa-4x"></i>
+            <h3 class="feature-title">Machine Learning-Based Threat Classification</h3>
+            <p class="feature-desc">Uses ML models to classify threats based on severity and type.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-robot fa-4x"></i>
+            <h3 class="feature-title">Automated Incident Response</h3>
+            <p class="feature-desc">Responds to security incidents automatically, reducing manual workload for security teams.</p>
+          </div>
+
+          <div class="feature-box col-lg-4">
+            <i class="icon fa-solid fa-masks-theater fa-4x"></i>
+            <h3 class="feature-title">SMOTE-Powered Threat Simulation</h3>
+            <p class="feature-desc">Uses SMOTE to generate synthetic attack traffic for model training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <%- include('partials/footer') %>
+
+</body>

@@ -1,0 +1,206 @@
+<%- include('partials/header') %>
+
+<!-- Custom CSS for Enhanced Dark Theme -->
+<style>
+  body {
+    background-color: #0d1117;
+    color: #e6edf3;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* About Section */
+  .about-section {
+    background: linear-gradient(135deg, #162447, #1e1e2f);
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    margin-top: 80px; /* Further down */
+    position: relative;
+    border: 2px solid rgba(77, 181, 255, 0.6);
+    animation: glow 2s infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px rgba(77, 181, 255, 0.3);
+    }
+    to {
+      box-shadow: 0 0 25px rgba(77, 181, 255, 0.8);
+    }
+  }
+
+  .about-section h1 {
+    color: #4db5ff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 15px rgba(77, 181, 255, 0.8);
+  }
+
+  .about-section p {
+    color: #c3cbd9;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 15px;
+    line-height: 1.8;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1);
+  }
+
+  /* Feature Section */
+  .features-section {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .feature-box {
+    background: #161b22;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(77, 181, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #4db5ff;
+  }
+
+  .feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 22px rgba(77, 181, 255, 0.3);
+  }
+
+  .feature-box i {
+    color: #4db5ff;
+    margin-bottom: 15px;
+  }
+
+  /* Team Section */
+  .team-container {
+    display: flex;
+    justify-content: space-evenly; /* Distributes evenly */
+    align-items: center;
+    flex-wrap: wrap; /* Ensures no scrolling */
+    gap: 25px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-card {
+    background: #161b22;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 8px 16px rgba(77, 181, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #4db5ff;
+  }
+
+  .team-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 22px rgba(77, 181, 255, 0.3);
+  }
+
+  .team-card img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #4db5ff;
+    margin-bottom: 15px;
+  }
+
+  .team-card h3 {
+    font-size: 1.6rem;
+    color: #4db5ff;
+  }
+
+  .team-card p {
+    font-size: 1rem;
+    color: #c3cbd9;
+  }
+
+  /* Icons */
+  h2, h3 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  h2 {
+    color: #4db5ff;
+    font-size: 2rem;
+  }
+
+  h3 {
+    color: #c3cbd9;
+    font-size: 1.4rem;
+  }
+</style>
+
+<div class="container">
+  <div class="about-section">
+    <h1>About Our System</h1>
+    <p>Our <b>AI-Based Network Intrusion Detection System (NIDS)</b> leverages the power of <span style="color:#4db5ff; font-weight: bold;">SMOTE</span> to generate synthetic attack traffic, mitigating data imbalance and significantly enhancing detection accuracy. Our advanced <span style="color:#4db5ff; font-weight: bold;">Label Encoders</span> pinpoint network anomalies with precision, while our cutting-edge <span style="color:#4db5ff; font-weight: bold;">AI-driven Automated Incident Response</span> dynamically neutralizes threats in real-time, dramatically reducing security workload and ensuring a robust cybersecurity defense.</p>
+  </div>
+
+  <!-- Features Section -->
+  <section class="features-section container">
+    <h2>Key Features of NIDS</h2>
+    <div class="row">
+      <div class="col-md-4 feature-box">
+        <i class="fas fa-shield-alt fa-3x"></i>
+        <h3>Real-time Threat Detection</h3>
+        <p>Monitors incoming network packets and detects potential threats instantly.</p>
+      </div>
+      <div class="col-md-4 feature-box">
+        <i class="fas fa-microchip fa-3x"></i>
+        <h3>AI-Powered Analysis</h3>
+        <p>Uses deep learning models to analyze traffic patterns and prevent cyberattacks.</p>
+      </div>
+      <div class="col-md-4 feature-box">
+        <i class="fas fa-lock fa-3x"></i>
+        <h3>Automated Incident Response</h3>
+        <p>Automatically blocks suspicious IPs and alerts the security team.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <h2>Meet Our Team</h2>
+  <h3>Students of RV College Of Engineering</h3>
+
+  <div class="team-container">
+    <div class="team-card">
+      <!-- <img src="/images/navya.jpg" alt="Nikita"> -->
+      <h3>Nikita</h3>
+      <p>CSE</p>
+    </div>
+
+    <div class="team-card">
+      <!-- <img src="/images/team1.jpg" alt="Navya Hebbar"> -->
+      <h3>Navya Hebbar</h3>
+      <p>CSE-CD</p>
+    </div>
+
+    <div class="team-card">
+      <!-- <img src="/images/team2.jpg" alt="Suraj"> -->
+      <h3>Suraj</h3>
+      <p>CSE</p>
+    </div>
+
+    <div class="team-card">
+      <!-- <img src="/images/team3.jpg" alt="Ishani Shetty"> -->
+      <h3>Ishani Shetty</h3>
+      <p>CSE-CD</p>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
